@@ -12,7 +12,7 @@ plugins {
 
 
 group = "org.connecttag"
-version = "1.0.0"
+version = "1.0.1"
 
 android {
     namespace = libs.versions.app.version.appId.get()
@@ -76,7 +76,6 @@ android {
 
 publishing.publications {
     create<MavenPublication>("release") {
-        description = "A shared library containing common data models for projects."
 
         afterEvaluate {
             from(components["release"])

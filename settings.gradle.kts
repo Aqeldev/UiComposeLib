@@ -7,13 +7,13 @@ pluginManagement {
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
+    repositories{
         google()
         mavenCentral()
-        maven { setUrl("https://jitpack.io") }
+        maven { url = uri("https://jitpack.io") }
     }
 }
-enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 rootProject.name = "UiComposeLib"
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 include(":ui")
 
